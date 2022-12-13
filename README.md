@@ -6,7 +6,7 @@ Design and implement a simple file storage API service. This storage has to acce
 It should have at least 1 unit test integration.
 Tech Stack used - .Net Core 7, Sqlite and Entity Framework
  
- 
+
 ### Usage
 
 1. Clone the repo
@@ -28,17 +28,20 @@ Tech Stack used - .Net Core 7, Sqlite and Entity Framework
 <img width="1433" alt="Screen Shot 2022-12-13 at 10 04 48 AM" src="https://user-images.githubusercontent.com/11133420/207410747-847bb8a6-410c-4540-ae0d-4b957a4a39ec.png">
 
 The Endpoints of the APIs are: 
- <li>**POST** : /FileData/UploadFile
+ <li>POST : /FileData/UploadFile
   To test this endpoint using swagger ui - Enter **UserId** as any integer value greater than 0 and upload a single file under **File** in request body.
   </li>
- <li>**GET** : /FileData/DownloadFile
+ <li>GET : /FileData/DownloadFile
   To test this endpoint using swagger ui - This endpoint takes FileId as a parameter. Enter **Id** as any integer value greater than 0.
  </li>
- <li>**PUT** : /FileData/UpdateFile
+ <li>PUT : /FileData/UpdateFile
   To test this endpoint using swagger ui - This endpoint takes FileId as a parameter. Enter **UserId** as any integer value greater than 0 and upload a single file under **File** in request body.
  </li>
- <li>**DELETE** : /FileData/DeleteFile
+ <li>DELETE : /FileData/DeleteFile
   To test this endpoint using swagger ui - This endpoint takes FileId as a parameter. Enter **Id** as any integer value greater than 0.
  </li>
  
  
+### Test
+To test this api a sample unit test has been implemented which asserts the upload file endpoint as shown below
+ <img width="1434" alt="Screen Shot 2022-12-13 at 11 29 13 AM" src="https://user-images.githubusercontent.com/11133420/207427042-1e2dd5c1-7b41-4639-803f-596429b51851.png">
